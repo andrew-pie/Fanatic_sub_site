@@ -7,7 +7,7 @@ If you set box-sizing: border-box; on an element, padding and border are include
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -55,7 +55,7 @@ ul {
 
 /* Insert some text before the content of header element: */
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url(../images/header-decor.svg);
   bottom: 0;
@@ -69,7 +69,7 @@ ul {
 }
 /* Insert some text after the content of header element: */
 .header::after {
-  content: "";
+  content: '';
   position: absolute;
   background-image: url(../images/header-decor.svg);
   bottom: 0;
@@ -88,7 +88,7 @@ ul {
   padding: 57px 0;
   gap: 100px;
   justify-content: flex-end;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 700;
   font-size: 20px;
   line-height: 22px;
@@ -127,7 +127,7 @@ ul {
   text-align: center;
   margin-right: 30px;
   color: #fff;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-weight: 700;
 }
 
@@ -154,7 +154,7 @@ ul {
 .header__decor-text--two {
   font-size: 130px;
   line-height: 145px;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   opacity: 0.3;
 }
 
@@ -182,7 +182,7 @@ ul {
 }
 
 .info {
-  background-image: url(/images/info-bg.jpg);
+  background-image: url(../images/info-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -190,7 +190,7 @@ ul {
 }
 
 .info::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 130px;
   background-color: #262c27;
@@ -257,7 +257,7 @@ ul {
 
 .info__specs-title {
   text-transform: uppercase;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 60px;
   line-height: 67px;
   width: 250px;
@@ -279,4 +279,53 @@ ul {
 
 .info__specs-caption {
   width: 185px;
+}
+
+.buy {
+  padding: 150px 0;
+}
+
+.buy__inner {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+.buy__content {
+  width: 510px;
+}
+
+.buy__title {
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 60px;
+  line-height: 67px;
+  color: #0093a1;
+}
+
+.buy__list {
+  margin-bottom: 25px;
+}
+
+.buy__item {
+  margin-bottom: 25px;
+  width: 285px;
+}
+
+.buy__item:hover .buy__item-title {
+  color: #0093a1;
+}
+
+.buy__item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.buy__item-text {
+}
+
+.buy__btn {
 }
